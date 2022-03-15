@@ -1,7 +1,5 @@
-const sentence = "hello there from lighthouse labs";
-
-for (let i = 0; i < sentence.length; i++) {
-  ((i) => {
-    setTimeout(() => {process.stdout.write(sentence[i])}, 100 * (i + 1));
-}) (i);
-}
+const sentence = "hello there from lighthouse labs\n";
+let time = 100;
+for (let char of sentence) {
+  setTimeout(() => {process.stdout.write(char)}, time += 100)
+};
